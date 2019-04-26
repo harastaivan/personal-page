@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    {% if title %}
+        <title>Ivan Harasta - {{ title }}</title>
+    {% else %}
+        <title>Ivan Harasta</title>
+    {% endif %}
+    <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.6.6/dist/terminal.min.css"/>
+</head>
+<body class="terminal">
+{% block content %}
+{% endblock %}
+</body>
+</html>
