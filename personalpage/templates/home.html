@@ -16,7 +16,7 @@
                 <h2>Contact</h2>
             </header>
             <ul>
-                <li>Email: {{ data.email }}</li>
+                <li>Email: <a href="mailto:{{ data.email }}">{{ data.email }}</a></li>
                 <li>Phone: {{ data.phone.prefix }}
                     {% for number in data.phone.number %}
                         {{ number }}
