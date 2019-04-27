@@ -4,30 +4,61 @@
         <div class="terminal-nav">
             <header class="terminal-logo">
                 <div class="logo terminal-prompt">
-                    <a href="#" class="no-style">{{ data.first_name }} {{ data.last_name }}</a>
+                    <a href="{{ data.url }}" class="no-style">{{ data.first_name }} {{ data.last_name }}</a>
                 </div>
             </header>
         </div>
     </div>
     <div class="container">
-        <p>Student, programmer</p>
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: {{ data.email }}</li>
-            <li>Phone: {{ data.phone.prefix }}
-                {% for number in data.phone.number %}
-                    {{ number }}
-                {% endfor %}
-            </li>
-        </ul>
-        <h2>Links</h2>
-        <ul>
-            {% for link in data.links %}
-                <li>
-                    <a href="{{ link.url }}">{{ link.name }}</a>
+        <p>{{ data.info }}</p>
+        <section>
+            <header>
+                <h2>Contact</h2>
+            </header>
+            <ul>
+                <li>Email: {{ data.email }}</li>
+                <li>Phone: {{ data.phone.prefix }}
+                    {% for number in data.phone.number %}
+                        {{ number }}
+                    {% endfor %}
                 </li>
-            {% endfor %}
-        </ul>
+            </ul>
+        </section>
         <hr>
+        <section>
+            <header>
+                <h2>Links</h2>
+            </header>
+            <ul>
+                {% for link in data.links %}
+                    <li>
+                        <a href="{{ link.url }}">{{ link.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Skills</h2>
+            </header>
+            {% for skill in data.skills %}
+                <p>{{ skill.name }}</p>
+                <div class="progress-bar progress-bar-show-percent">
+                    <div class="progress-bar-filled" style="width: {{ skill.percentage }}%" data-filled="Loading {{ skill.percentage }}%"></div>
+                </div>
+                <br>
+            {% endfor %}
+        </section>
+        <hr>
+        <section>
+            <footer>
+                {{ data.footer }}
+            </footer>
+        </section>
+        <hr>
+        <section>
+            <p>Version: {{ data.version }}</p>
+        </section>
     </div>
 {% endblock content %}

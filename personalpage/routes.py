@@ -4,6 +4,7 @@ from personalpage import app
 data = {
     'first_name': 'Ivan',
     'last_name': 'Harasta',
+    'info': 'Student, web dev and car guy.',
     'email': 'harasta.ivan@gmail.com',
     'phone': {
         'prefix': '+420',
@@ -26,7 +27,52 @@ data = {
             'name': 'LinkedIn',
             'url': 'https://www.linkedin.com/in/ivan-hara%C5%A1ta-259342131/'
         }
-    ]
+    ],
+    'skills': [
+        {
+            'name': 'PHP',
+            'percentage': 70
+        },
+        {
+            'name': 'Python',
+            'percentage': 60
+        },
+        {
+            'name': 'SQL',
+            'percentage': 85
+        },
+        {
+            'name': 'Git',
+            'percentage': 90
+        },
+        {
+            'name': 'Bash',
+            'percentage': 40
+        },
+        {
+            'name': 'C++',
+            'percentage': 30
+        },
+        {
+            'name': 'Javascript',
+            'percentage': 40
+        },
+        {
+            'name': 'Linux',
+            'percentage': 50
+        },
+        {
+            'name': 'Java',
+            'percentage': 25
+        },
+        {
+            'name': 'Docker',
+            'percentage': 35
+        },
+    ],
+    'url': 'localhost:5000',
+    'footer': 'Ivan Harasta, 2019',
+    'version': '0.1.0'
 }
 
 
