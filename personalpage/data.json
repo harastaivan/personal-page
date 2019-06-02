@@ -1,6 +1,6 @@
 {
     "first_name": "Ivan",
-    "last_name": "Harasta",
+    "last_name": "Harašta",
     "info": "Student and web developer.",
     "email": "harasta.ivan@gmail.com",
     "phone": {
@@ -68,6 +68,6 @@
         }
     ],
     "url": "https://harasta.dev",
-    "footer": "Ivan Harasta, 2019",
-    "version": "0.1.4"
+    "footer": "Ivan Harašta, 2019",
+    "version": "0.1.5"
 }
