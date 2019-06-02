@@ -91,6 +91,19 @@
         </section>
         <hr>
         <section>
+            <header>
+                <h2>Links</h2>
+            </header>
+            <ul>
+                {% for link in data.links %}
+                    <li>
+                        <a href="{{ link.url }}">{{ link.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <hr>
+        <section>
             <footer>
                 {{ data.footer }}
             </footer>
