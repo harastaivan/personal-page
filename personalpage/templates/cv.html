@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container">
+        <div class="terminal-nav">
+            <header class="terminal-logo">
+                <div class="logo terminal-prompt">
+                    <a href="{{ data.url }}" class="no-style">{{ data.first_name }} {{ data.last_name }}</a>
+                </div>
+            </header>
+        </div>
+    </div>
+    <div class="container">
+        <p>
+            {{ data.info }}
+        </p>
+        <hr>
+        <section>
+            <header>
+                <h2>Personal information</h2>
+            </header>
+            <ul>
+                <li><a href="mailto:{{ data.email }}">{{ data.email }}</a></li>
+                <li>{{ data.phone.prefix }}
+                    {% for number in data.phone.number %}
+                        {{ number }}
+                    {% endfor %}</li>
+                <li>{{ data.birth_date }}</li>
+            </ul>
+        </section>
+        <section>
+            <header>
+                <h4>Address</h4>
+            </header>
+            <ul>
+                <address>
+                    {{ data.address.street }} {{ data.address.street_number }}<br>
+                    {{ data.address.postal_code }} {{ data.address.city }}<br>
+                    {{ data.address.country }}
+                </address>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Skills</h2>
+            </header>
+            <table>
+                <tbody>
+                {% for skill in data.skills %}
+                    <tr>
+                        <td>{{ skill.name }}</td>
+                        <td>{{ skill.description }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Work experience</h2>
+            </header>
+            <table>
+                <tbody>
+                {% for experience in data.work %}
+                    <tr>
+                        <td>{{ experience.time }}</td>
+                        <td><strong>{{ experience.heading }}</strong> at <a
+                                href="{{ experience.place.url }}">{{ experience.place.name }}</a></td>
+                        <td>{{ experience.description }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Education</h2>
+            </header>
+            <table>
+                <tbody>
+                {% for edu in data.education %}
+                    <tr>
+                        <td>{{ edu.time }}</td>
+                        <td>{{ edu.heading }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <footer>
+                {{ data.footer }}
+            </footer>
+        </section>
+        <hr>
+        <section>
+            <p>Version: {{ data.version }}</p>
+        </section>
+    </div>
+{% endblock content %}

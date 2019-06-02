@@ -11,6 +11,14 @@
             "486"
         ]
     },
+    "address": {
+        "street": "Revoluční",
+        "street_number": "613",
+        "postal_code": "357 35",
+        "city": "Chodov",
+        "country": "Česká republika"
+    },
+    "birth_date": "21. května 1998",
     "links": [
         {
             "name": "GitHub",
@@ -28,43 +36,92 @@
     "skills": [
         {
             "name": "PHP",
+            "description": "Perfektní znalost OOP i jazyka jako takového, zkušenost s frameworky jako je např. Symfony nebo Slim.",
             "percentage": 70
         },
         {
             "name": "Python",
+            "description": "Můj nejoblíbenější jazyk, napsal jsem v něm vícevláknový TCP server pro komunikaci s roboty.",
             "percentage": 60
         },
         {
             "name": "SQL",
+            "description": "Zkušenosti s MySQL, Oracle SQL, PostgreSQL. Dělal jsem v SQL semestrální práci do školy, takže znám většinu dotazů a SQL používám na denní bázi.",
             "percentage": 85
         },
         {
             "name": "Git",
+            "description": "Bez Gitu nemohu fungovat, používám ho výhradně v terminálu abych věděl co se skutečně děje.",
             "percentage": 90
         },
         {
             "name": "Bash",
+            "description": "Znám základy bashe, nějaký menší skriptík bych zvládl napsat, ale asi nic na úrovni DevOpsáka nebo administrátora.",
             "percentage": 40
         },
         {
             "name": "C++",
+            "description": "Používám ho druhým rokem na algoritmické/grafové problémy a kde je potřeba rychlost.",
             "percentage": 30
         },
         {
             "name": "Javascript",
+            "description": "JS trochu znám, o Reactu nebo Vue jsem také slyšel, celý front-end bych ale napsat nezvládl.",
             "percentage": 40
         },
         {
             "name": "Linux",
+            "description": "Unixové systémy miluji narozdíl od Windows, proto mám Mac, přijde mi jako to nejlepší z obou 'světů'.",
             "percentage": 50
         },
         {
             "name": "Java",
+            "description": "V javě jsem programoval hru jako semestrální práci, znám ale jen základy.",
             "percentage": 25
         },
         {
             "name": "Docker",
+            "description": "Docker mi přijde jako super nápad, neměl jsem ale moc času se v něm zlepšit, používal jsem ho v práci jen pasivně.",
             "percentage": 35
+        }
+    ],
+    "work": [
+        {
+            "time": "od jara 2019 - dnes",
+            "place": {
+                "name": "Bayer",
+                "url": "https://www.bayer.cz/"
+            },
+            "heading": "Data scientist",
+            "description": "Chtěl jsem vyzkoušet i trochu jinou práci než backend vývojář, takže jsem vyzkoušel práci datového analytika. Pracoval jsem převážně v excelu nebo pythonu."
+        },
+        {
+            "time": "léto 2018",
+            "place": {
+                "name": "Footshop",
+                "url": "https://www.footshop.cz/cs/"
+            },
+            "heading": "PHP Developer",
+            "description": "Po předchozí kladné zkušenosti jsem se sem vrátil a naučil jsem se toho ještě mnohem víc, včetně Symfony nebo Dockeru. Zůstal jsem jen přes léto zase kvůli škole."
+        },
+        {
+            "time": "podzim 2017",
+            "place": {
+                "name": "Footshop",
+                "url": "https://www.footshop.cz/cs/"
+            },
+            "heading": "PHP Developer",
+            "description": "Moje první práce jako programátor. Když jsem nastoupil nevěděl jsem pořádně ani co je OOP. Naučil jsem se toho tady strašně moc, bohužel jsem potřeboval více času do školy."
+        }
+    ],
+    "education": [
+        {
+            "time": "2017 - dnes",
+            "heading": "bakalářské prezenční studium, obor Softwarové inženýrství, České vysoké učení technické v Praze."
+        },
+        {
+            "time": "2009 - 2017",
+            "heading": "Maturitní vysvědčení, Gymnázium Sokolov."
         }
     ],
     "url": "https://harasta.dev",

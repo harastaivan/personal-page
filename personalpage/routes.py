@@ -9,3 +9,8 @@ with open('personalpage/data.json') as f:
 @app.route("/")
 def home():
     return render_template('home.html', data=data)
+
+
+@app.route("/cv")
+def cv():
+    return render_template('cv.html', data=data)
