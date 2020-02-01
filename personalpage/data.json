@@ -5,11 +5,7 @@
     "email": "harasta.ivan@gmail.com",
     "phone": {
         "prefix": "+420",
-        "number": [
-            "775",
-            "412",
-            "486"
-        ]
+        "number": ["775", "412", "486"]
     },
     "address": {
         "street": "Revoluční",
@@ -35,24 +31,39 @@
     ],
     "skills": [
         {
-            "name": "PHP",
-            "description": "Perfektní znalost OOP i jazyka jako takového, zkušenost s frameworky jako je např. Symfony nebo Slim.",
+            "name": "React",
+            "description": "Můj nejoblíbenější framework v tuto chvíli, používám spolu s NodeJS.",
             "percentage": 70
+        },
+        {
+            "name": "NodeJS + Express",
+            "description": "Můj nejoblíbenější jazyk pro vývoj webových aplikací, Express používám jako knihovnu pro server.",
+            "percentage": 60
         },
         {
             "name": "Python",
             "description": "Můj nejoblíbenější jazyk, napsal jsem v něm vícevláknový TCP server pro komunikaci s roboty.",
-            "percentage": 60
-        },
-        {
-            "name": "SQL",
-            "description": "Zkušenosti s MySQL, Oracle SQL, PostgreSQL. Dělal jsem v SQL semestrální práci do školy, takže znám většinu dotazů a SQL používám na denní bázi.",
-            "percentage": 85
+            "percentage": 50
         },
         {
             "name": "Git",
             "description": "Bez Gitu nemohu fungovat, používám ho výhradně v terminálu abych věděl co se skutečně děje.",
             "percentage": 90
+        },
+        {
+            "name": "Databáze, ORM",
+            "description": "Zkušenosti s MySQL, PostgreSQL, Mongo, Oracle SQL. Dělal jsem v SQL semestrální práci do školy, takže znám většinu dotazů a SQL používám na denní bázi.",
+            "percentage": 75
+        },
+        {
+            "name": "PHP",
+            "description": "Perfektní znalost OOP i jazyka jako takového, zkušenost s frameworky jako je např. Symfony nebo Slim.",
+            "percentage": 60
+        },
+        {
+            "name": "Docker",
+            "description": "Docker chci v poslední době používat pro všechny aplikace v produkci.",
+            "percentage": 55
         },
         {
             "name": "Bash",
@@ -65,27 +76,26 @@
             "percentage": 30
         },
         {
-            "name": "Javascript",
-            "description": "JS trochu znám, o Reactu nebo Vue jsem také slyšel, celý front-end bych ale napsat nezvládl.",
-            "percentage": 40
-        },
-        {
             "name": "Linux",
             "description": "Unixové systémy miluji narozdíl od Windows, proto mám Mac, přijde mi jako to nejlepší z obou 'světů'.",
             "percentage": 50
         },
         {
             "name": "Java",
-            "description": "V javě jsem programoval hru jako semestrální práci, znám ale jen základy.",
-            "percentage": 25
-        },
-        {
-            "name": "Docker",
-            "description": "Docker mi přijde jako super nápad, neměl jsem ale moc času se v něm zlepšit, používal jsem ho v práci jen pasivně.",
+            "description": "V javě jsem programoval hru např. hru jako semestrální práci nebo Open API.",
             "percentage": 35
         }
     ],
     "work": [
+        {
+            "time": "od podzimu 2019 - dnes",
+            "place": {
+                "name": "Koala42",
+                "url": "https://koala42.com/"
+            },
+            "heading": "Frontend Developer v Reactu",
+            "description": "Chtěl jsem si vyzkoušet práci frontenďáka, jelikož chci umět v budoucnu vyvíjet Full-Stack."
+        },
         {
             "time": "od jara 2019 - dnes",
             "place": {
@@ -125,5 +135,5 @@
         }
     ],
     "url": "https://harasta.dev",
-    "footer": "Ivan Harašta, 2019"
+    "footer": "Ivan Harašta, 2020"
 }
