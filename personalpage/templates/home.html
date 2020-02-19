@@ -42,13 +42,11 @@
             <header>
                 <h2>Skills</h2>
             </header>
-            {% for skill in data.skills %}
-                <p>{{ skill.name }}</p>
-                <div class="progress-bar progress-bar-show-percent">
-                    <div class="progress-bar-filled" style="width: {{ skill.percentage }}%" data-filled="Loading {{ skill.percentage }}%"></div>
-                </div>
-                <br>
-            {% endfor %}
+            <ul>
+                {% for skill in data.skills %}
+                    <li>{{ skill.name }}</li>
+                {% endfor %}
+            </ul>
         </section>
         <hr>
         <section>
