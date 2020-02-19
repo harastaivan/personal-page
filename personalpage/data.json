@@ -32,17 +32,17 @@
     "skills": [
         {
             "name": "React",
-            "description": "Můj nejoblíbenější framework v tuto chvíli, používám spolu s NodeJS.",
+            "description": "Můj nejoblíbenější frontendový framework v tuto chvíli, používám spolu s NodeJS.",
             "percentage": 70
         },
         {
             "name": "NodeJS + Express",
-            "description": "Můj nejoblíbenější jazyk pro vývoj webových aplikací, Express používám jako knihovnu pro server.",
+            "description": "Pro vývoj backendu většinou volím také Javascript, Express používám jako serverovou knihovnu a je to moje go-to kombo s Reactem.",
             "percentage": 60
         },
         {
             "name": "Python",
-            "description": "Můj nejoblíbenější jazyk, napsal jsem v něm vícevláknový TCP server pro komunikaci s roboty.",
+            "description": "Napsal jsem v něm vícevláknový TCP server pro komunikaci s roboty, rád ho také používám místo NodeJS.",
             "percentage": 50
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "name": "C++",
-            "description": "Používám ho druhým rokem na algoritmické/grafové problémy a kde je potřeba rychlost.",
+            "description": "Na univerzitě jej používám třetím rokem na algoritmické/grafové problémy a kde je potřeba rychlost.",
             "percentage": 30
         },
         {
@@ -102,7 +102,7 @@
                 "name": "Bayer",
                 "url": "https://www.bayer.cz/"
             },
-            "heading": "Data scientist",
+            "heading": "Data analyst",
             "description": "Chtěl jsem vyzkoušet i trochu jinou práci než backend vývojář, takže jsem vyzkoušel práci datového analytika. Pracoval jsem převážně v excelu nebo pythonu."
         },
         {
