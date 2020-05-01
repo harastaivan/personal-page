@@ -2,7 +2,7 @@
     "first_name": "Ivan",
     "last_name": "Harašta",
     "info": "Student and web developer.",
-    "email": "harasta.ivan@gmail.com",
+    "email": "ivan@harasta.dev",
     "phone": {
         "prefix": "+420",
         "number": ["775", "412", "486"]
