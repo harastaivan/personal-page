@@ -7,7 +7,7 @@ import { selectors as networkSelectors, actions as networkActions } from 'module
 import { UPDATE_CHECKER_INTERVAL, UPDATE_CHECKER_MINIMAL_INVERAL } from '../../../constants';
 
 const pageVisibilityStateEmitter = () =>
-    eventChannel<VisibilityState>(emitter => {
+    eventChannel<DocumentVisibilityState>(emitter => {
         function handler() {
             emitter(document.visibilityState);
         }
@@ -40,7 +40,7 @@ async function update() {
     }
 }
 
-function* scheduleUpdate(pageVisibilityState: EventChannel<VisibilityState>) {
+function* scheduleUpdate(pageVisibilityState: EventChannel<DocumentVisibilityState>) {
     const started = Date.now();
 
     yield race({

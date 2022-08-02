@@ -1,4 +1,4 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import { RendererProvider, ThemeProvider } from 'react-fela';
 import { createRenderer } from 'fela';
 import { theme } from 'styles';
@@ -6,7 +6,7 @@ import { theme } from 'styles';
 import * as config from '../config';
 
 interface FelaProps {
-    children: React.ReactNode;
+    children: ReactNode;
 }
 
 const renderer = createRenderer(config.rendererConfig);
