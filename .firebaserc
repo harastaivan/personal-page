@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "default": "infrastruktura-1307"
+  },
+  "targets": {
+    "infrastruktura-1307": {
+      "hosting": {
+        "development": [
+          "TBD_PROJECT_NAME-development"
+        ]
+      }
+    },
+    "TBD_GCP_PROJECT_ID": {
+      "hosting": {
+        "stage": [
+          "TBD_PROJECT_NAME-stage"
+        ],
+        "master": [
+          "TBD_PROJECT_NAME-production"
+        ]
+      }
+    }
+  }
+}

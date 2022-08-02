@@ -1,0 +1,14 @@
+development:
+    app-domain.com:
+        https://new.web.app: &basic_urls
+            - /
+            - /favicon.ico
+            - /service-worker.js
+            - /manifest.json
+            - /asset-manifest.json
+stage:
+    app-domain.com:
+        https://stage.app-domain.com: *basic_urls
+master:
+    app-domain.com:
+        https://app-domain.com: *basic_urls
