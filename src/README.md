@@ -44,7 +44,7 @@ const Application = React.lazy(() =>
     import('modules/application').then(module => ({
         // Named export must be converted to default export.
         default: module.App,
-    }))
+    })),
 );
 ```
 
