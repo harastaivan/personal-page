@@ -34,6 +34,7 @@ function* createConnectionChannel() {
     return eventChannel<ConnectionStatus>(emit => {
         function handleConnectionStatusChange() {
             const status = getConnectionStatus();
+
             if (status !== prevStatus) {
                 emit(status);
                 prevStatus = status;

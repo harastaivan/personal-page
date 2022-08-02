@@ -1,5 +1,7 @@
-import * as logger from 'config/loglevel';
 import { put } from 'redux-saga/effects';
+
+import * as logger from 'config/loglevel';
+
 import { newVersionAvailable } from '../../actions';
 
 /**

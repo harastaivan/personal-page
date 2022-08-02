@@ -13,16 +13,14 @@ const routes = [
     },
 ];
 
-const App = () => {
-    return (
-        <Switch>
-            {routes.map((route, index) => (
-                // We ensure same order of array items
-                // eslint-disable-next-line react/no-array-index-key
-                <Route {...route} key={index} />
-            ))}
-        </Switch>
-    );
-};
+const App = () => (
+    <Switch>
+        {routes.map((route, index) => (
+            // We ensure same order of array items
+            // eslint-disable-next-line react/no-array-index-key
+            <Route {...route} key={index} />
+        ))}
+    </Switch>
+);
 
 export default App;

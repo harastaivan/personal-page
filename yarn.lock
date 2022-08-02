@@ -36,6 +36,13 @@
   dependencies:
     eslint-config-react-app "7.0.0"
 
+"@ackee/eslint-config@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@ackee/eslint-config/-/eslint-config-4.1.0.tgz#a78aa4ada083f85d4ad370aea081c7982ccc21f9"
+  integrity sha512-sF5YN3qC1lwGvCmItwnoB2aUqiTPgdiW2P96n/hx70r/Hl2BRV19eaRo3pEpkhXYzcnTD/ImjGwwgF5K0FGFFQ==
+  dependencies:
+    eslint-config-react-app "7.0.0"
+
 "@ackee/jerome@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@ackee/jerome/-/jerome-5.0.1.tgz#38eba2489346b0f37c6d468562d20feaffe52a1b"

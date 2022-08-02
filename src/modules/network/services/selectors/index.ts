@@ -1,4 +1,5 @@
 import { createSelector } from 'reselect';
+
 import { ConnectionStatus } from '../../constants';
 
 export const networkStatusSelector = state => state.network.status;

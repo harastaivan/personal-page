@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { ErrorBoundary as SentryErrorBoundary } from '@sentry/react';
 import type { ErrorBoundaryProps as SentryErrorBoundaryProps } from '@sentry/react/esm/errorboundary';
+
 import * as Log from 'config/loglevel';
 
 import ErrorMessage from '../ErrorMessage';

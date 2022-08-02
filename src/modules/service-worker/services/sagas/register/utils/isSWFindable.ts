@@ -8,6 +8,7 @@ export default async function isSWFindable(swUrl: string) {
         const response = await fetch(swUrl, {
             headers: { 'Service-Worker': 'script' },
         });
+
         const contentType = response.headers.get('content-type');
         const swFound = response.status !== 404 && contentType != null && contentType.includes('javascript');
 

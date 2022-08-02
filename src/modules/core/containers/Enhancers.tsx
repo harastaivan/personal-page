@@ -1,7 +1,8 @@
 import type { ReactNode } from 'react';
 
-import { Localizations } from '../modules/localization';
 import { ErrorBoundary } from 'modules/errors';
+
+import { Localizations } from '../modules/localization';
 
 interface EnhancersProps {
     children: ReactNode;

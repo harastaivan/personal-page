@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Translatable } from '@ackee/jerome';
+
 import { intlData } from '../../config';
 
 interface AppLocalizationsProps {

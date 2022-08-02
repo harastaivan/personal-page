@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 import { ConnectionStatus } from '../../constants';
 import getConnectionStatus from '../utils/getConnectionStatus';
 

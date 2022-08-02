@@ -1,4 +1,5 @@
 import type { TRule } from 'fela';
+
 import { colors } from './colors';
 import * as font from './font';
 import metrics from './metrics';

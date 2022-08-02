@@ -1,6 +1,7 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { RendererProvider, ThemeProvider } from 'react-fela';
 import { createRenderer } from 'fela';
+
 import { theme } from 'styles';
 
 import * as config from '../config';

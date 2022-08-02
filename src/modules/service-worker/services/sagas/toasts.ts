@@ -1,5 +1,6 @@
-import * as logger from 'config/loglevel';
 import * as sagaEffects from 'redux-saga/effects';
+
+import * as logger from 'config/loglevel';
 
 import * as actions from '../actions';
 

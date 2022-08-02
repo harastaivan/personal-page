@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/react';
 import { omit, isEmpty } from 'lodash';
-
 import * as loglevel from 'loglevel';
+
 import { isEnvProduction } from 'constants/index';
 
 isEnvProduction ? loglevel.disableAll() : loglevel.enableAll();

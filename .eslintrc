@@ -27,14 +27,19 @@
         "@typescript-eslint/no-use-before-define": "warn",
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "warn",
-        "spaced-comment": [
-            "error",
-            "always",
+        "padding-line-between-statements": [
+            "warn",
             {
-                "line": {
-                    "markers": ["/"]
-                }
-            }
+                "blankLine": "always",
+                "prev": "*",
+                "next": "return"
+            },
+            { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+            { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] },
+            { "blankLine": "always", "prev": ["function", "class", "multiline-const"], "next": "*" },
+            { "blankLine": "always", "prev": ["import", "export"], "next": "*" },
+            { "blankLine": "any", "prev": "import", "next": "import" },
+            { "blankLine": "any", "prev": "export", "next": "export" }
         ]
     },
     "overrides": [

@@ -4,6 +4,7 @@ import { eventChannel } from 'redux-saga';
 
 import * as logger from 'config/loglevel';
 import { selectors as networkSelectors, actions as networkActions } from 'modules/network';
+
 import { UPDATE_CHECKER_INTERVAL, UPDATE_CHECKER_MINIMAL_INVERAL } from '../../../constants';
 
 const pageVisibilityStateEmitter = () =>
@@ -50,6 +51,7 @@ function* scheduleUpdate(pageVisibilityState: EventChannel<DocumentVisibilitySta
     });
 
     const duration = Date.now() - started;
+
     if (duration < UPDATE_CHECKER_INTERVAL) {
         yield delay(UPDATE_CHECKER_MINIMAL_INVERAL - duration);
     }

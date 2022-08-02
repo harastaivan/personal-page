@@ -1,5 +1,7 @@
 import { merge } from 'lodash';
+
 import { isLocalhost } from 'constants/index';
+
 import type { ConfigDevelopment } from './config.development';
 
 const envConfig = require(`./config.${process.env.REACT_APP_BUILD_ENV}.ts`).default;
