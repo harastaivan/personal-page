@@ -1,4 +1,4 @@
-import type { TRuleWithTheme } from 'styles';
+import type { TRuleWithTheme } from 'styles/theme';
 import type { LoaderProps } from './Loader';
 
 type StyleProps = Required<Pick<LoaderProps, 'inline'>>;

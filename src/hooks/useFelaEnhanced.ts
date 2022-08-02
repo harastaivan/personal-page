@@ -6,7 +6,7 @@ import type { TNormalizedMultiRule } from 'fela-tools';
 import type { TRule } from 'fela';
 import type { Rules as ReactFelaRules } from 'react-fela';
 
-import type { Theme } from 'styles';
+import type { Theme, ThemeProps } from 'styles/theme';
 
 declare module 'fela-tools' {
     function combineMultiRules<TRuleProps, Styles>(
@@ -14,7 +14,11 @@ declare module 'fela-tools' {
     ): TNormalizedMultiRule<TRuleProps, Styles>;
 }
 
-// This solution is based on the implementation of [connect binding](https://github.com/robinweser/fela/blob/master/packages/fela-bindings/src/connectFactory.js) from fela
+/**
+ * This solution is based on the implementation of [connect binding](https://github.com/robinweser/fela/blob/master/packages/fela-bindings/src/connectFactory.js) from fela
+ *
+ * Note that `rules` & `extend` props are considered to be static.
+ */
 export default function useFelaEnhanced<FelaRules, Props>(
     rules: ReactFelaRules<Props, FelaRules, Theme>,
     props: Props & { extend?: ReactFelaRules<Omit<Props, 'extend'>, FelaRules, Theme> } = {} as Props,
@@ -22,62 +26,67 @@ export default function useFelaEnhanced<FelaRules, Props>(
     const { theme, renderer } = useFela<Theme>();
 
     const { extend, ...otherProps } = props;
-    const allRules = [rules];
-
-    if (extend) {
-        allRules.push(extend);
-    }
 
     type PropsWithoutExtend = Omit<Props, 'extend'>;
-    type PropsWithTheme = PropsWithoutExtend & { theme: Theme };
+    type PropsWithTheme = PropsWithoutExtend & ThemeProps;
 
-    const combinedRules: TNormalizedMultiRule<PropsWithTheme, FelaRules> = combineMultiRules(...allRules);
+    const combinedRules: TNormalizedMultiRule<ThemeProps, FelaRules> = React.useMemo(() => {
+        const allRules = [rules];
 
-    const preparedRules = combinedRules(
-        {
-            ...otherProps,
-            theme,
-        },
-        renderer,
-    );
+        if (extend) {
+            allRules.push(extend);
+        }
 
-    type RulesKey = keyof FelaRules;
-    type Styles = { [key in RulesKey]: string };
+        return combineMultiRules(...allRules);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
-    const rulesKeys = Object.keys(preparedRules) as RulesKey[];
+    return React.useMemo(() => {
+        const preparedRules = combinedRules(
+            {
+                ...otherProps,
+                theme,
+            },
+            renderer,
+        );
 
-    const styles = rulesKeys.reduce<Styles>((styleMap, name) => {
-        const preparedRule = preparedRules[name] as TRule<PropsWithTheme>;
+        type RulesKey = keyof FelaRules;
+        type Styles = { [key in RulesKey]: string };
 
-        styleMap[name] = renderer.renderRule(preparedRule, {
-            ...otherProps,
-            theme,
-        });
+        const rulesKeys = Object.keys(preparedRules) as RulesKey[];
 
-        return styleMap;
-    }, {} as Styles);
+        const styles = rulesKeys.reduce<Styles>((styleMap, name) => {
+            const preparedRule = preparedRules[name] as TRule<PropsWithTheme>;
 
-    type Rules = { [key in RulesKey]: TRule<PropsWithTheme> };
+            styleMap[name] = renderer.renderRule(preparedRule, {
+                ...otherProps,
+                theme,
+            });
 
-    const boundRules = rulesKeys.reduce<Rules>((ruleMap, name) => {
-        ruleMap[name] = (props: PropsWithoutExtend) =>
-            preparedRules[name](
-                {
-                    theme,
-                    ...props,
-                },
-                renderer,
-            );
+            return styleMap;
+        }, {} as Styles);
 
-        return ruleMap;
-    }, {} as Rules);
+        type Rules = { [key in RulesKey]: TRule<ThemeProps> };
+        type Props = { [key: string]: any };
+        const boundRules = rulesKeys.reduce<Rules>((ruleMap, name) => {
+            ruleMap[name] = (props: Props) =>
+                preparedRules[name](
+                    {
+                        theme,
+                        ...props,
+                    },
+                    renderer,
+                );
 
-    return React.useMemo(
-        () => ({
+            return ruleMap;
+        }, {} as Rules);
+
+        return {
             styles,
-            rules: boundRules,
             theme,
-        }),
-        [styles, theme, boundRules],
-    );
+            rules: boundRules,
+        };
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [combinedRules, renderer, theme, ...Object.keys(otherProps), ...Object.values(otherProps)]);
 }

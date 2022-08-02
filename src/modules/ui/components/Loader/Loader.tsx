@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 import { useFelaEnhanced } from 'hooks';
-import type { RulesExtend } from 'styles';
+import type { RulesExtend } from 'styles/theme';
 
 import * as felaRules from './Loader.rules';
 
