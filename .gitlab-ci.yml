@@ -1,8 +1,0 @@
-variables:
-    NODE_BASE_IMAGE: node:14.17.1
-    BUILD_PATH: './build'
-
-include:
-    - project: Ackee/gitlab-ci-templates
-      ref: react/v3.5.0
-      file: react/pipeline.yml
