@@ -3,9 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@ackee/antonio-auth": "4.0.x",
         "@ackee/antonio-core": "4.0.x",
-        "@ackee/antonio-utils": "4.0.x",
         "@ackee/jerome": "5.0.1",
         "@ackee/react-scripts": "3.0.0",
         "@reduxjs/toolkit": "1.x",
