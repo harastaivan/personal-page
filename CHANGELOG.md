@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="0.2.1"></a>
+## 0.2.1 (2022-10-24)
+
+### Miscellaneous
+
+-  👷 Remove circular-modules check [[2363092](https://github.com/harastaivan/personal-page/commit/2363092a274d488df4505c51018418cc422242a0)]
+
+
 <a name="0.2.0"></a>
 ## 0.2.0 (2022-10-24)
 
