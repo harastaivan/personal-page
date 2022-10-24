@@ -8,11 +8,12 @@ import * as felaRules from './Avatar.rules';
 
 export interface AvatarProps extends AvatarImageProps {
     fallback?: string;
+    size?: number;
     extend?: RulesExtend<typeof felaRules>;
 }
 
-export const Avatar = ({ fallback, extend, ...props }: AvatarProps) => {
-    const { styles } = useFelaEnhanced(felaRules, { extend });
+export const Avatar = ({ fallback, size, extend, ...props }: AvatarProps) => {
+    const { styles } = useFelaEnhanced(felaRules, { extend, size });
 
     return (
         <Root className={styles.root}>

@@ -1,16 +1,18 @@
 import type { TRuleWithTheme } from 'styles/theme';
 
-const SIZE = 150;
+import type { AvatarProps } from './Avatar';
 
-export const root: TRuleWithTheme = () => ({
+type StyleProps = Pick<AvatarProps, 'size'>;
+
+export const root: TRuleWithTheme<StyleProps> = ({ size = 150 }) => ({
     display: 'inline-flex',
     alignItems: 'center',
     justifyContent: 'center',
     verticalAlign: 'middle',
     overflow: 'hidden',
     userSelect: 'none',
-    width: SIZE,
-    height: SIZE,
+    width: size,
+    height: size,
     borderRadius: '100%',
 });
 
