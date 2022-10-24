@@ -1,11 +1,12 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 import config from 'config';
+import { HomePage } from 'modules/home';
 
 const routes = [
     {
         path: config.routes.home,
-        render: () => 'Home Page',
+        render: () => <HomePage />,
         exact: true,
     },
     {
