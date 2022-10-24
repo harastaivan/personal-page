@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { RendererProvider, ThemeProvider } from 'react-fela';
 import { createRenderer } from 'fela';
 
-import { theme } from 'styles';
+import { theme } from 'styles/theme';
 
 import * as config from '../config';
 
