@@ -2,6 +2,7 @@ import { FormattedMessage } from 'react-intl';
 
 import { useFelaEnhanced } from 'hooks';
 import type { RulesExtend } from 'styles/theme';
+import { SectionHeadline } from 'modules/ui';
 
 import * as felaRules from './Header.rules';
 
@@ -14,10 +15,9 @@ export const Header = ({ extend }: HeaderProps) => {
 
     return (
         <div className={styles.header}>
-            <span className={styles.prefix}>
-                <FormattedMessage id="headline.prefix" />
-            </span>
-            <FormattedMessage id="header.title" />
+            <SectionHeadline level={4} inverted>
+                <FormattedMessage id="header.title" />
+            </SectionHeadline>
         </div>
     );
 };
