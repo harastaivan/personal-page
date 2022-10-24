@@ -4,5 +4,13 @@ module.exports = {
     languages: ['cs', 'en'],
     column: 'key_web',
     format: 'json',
-    plugins: [],
+    plugins: [
+        '@lokse/plugin-prettier',
+        {
+            name: '@lokse/plugin-fallback',
+            options: {
+                defaultLanguage: 'cs',
+            },
+        },
+    ],
 };
