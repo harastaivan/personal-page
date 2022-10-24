@@ -22,6 +22,7 @@ const defaults = {
     forms: {
         login: 'loginForm',
     },
+    appVersion: process.env.REACT_APP_VERSION,
 };
 
 export default merge(defaults, envConfig) as ConfigDevelopment & typeof defaults;
