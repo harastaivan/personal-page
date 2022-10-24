@@ -2,3 +2,13 @@
     https://create-react-app.dev/docs/adding-css-reset#indexcss 
 */
 @import-normalize;
+
+body {
+    font-family: IBMPlexMono, monospace;
+    background-color: #06113c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

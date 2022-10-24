@@ -1,1 +1,1 @@
-export const family = 'sans-serif';
+export const family = 'IBMPlexMono, sans-serif';
