@@ -18,7 +18,7 @@ export const IntroductionSection = ({ extend }: IntroductionSectionProps) => {
 
     return (
         <Section extend={{ section: rules.centeredSection }}>
-            <Avatar src="/me.png" fallback={formatMessage({ id: 'introduction.avatarFallback' })} />
+            <Avatar src="/me.jpeg" fallback={formatMessage({ id: 'introduction.avatarFallback' })} />
             <Headline level={1} extend={{ headline: rules.headline }}>
                 <FormattedMessage id="introduction.name" /> <FormattedMessage id="introduction.surname" />
             </Headline>
