@@ -6,6 +6,7 @@ import * as felaRules from './Home.rules';
 import { IntroductionSection } from '../IntroductionSection';
 import { EducationSection } from '../EducationSection';
 import { WorkSection } from '../WorkSection';
+import { ProjectsSection } from '../ProjectsSection';
 import { TechnologiesSection } from '../TechnologiesSection';
 import { ContactSection } from '../ContactSection';
 
@@ -21,6 +22,7 @@ export const Home = ({ extend }: HomeProps) => {
             <IntroductionSection />
             <EducationSection />
             <WorkSection />
+            <ProjectsSection />
             <TechnologiesSection />
             <ContactSection />
         </div>
