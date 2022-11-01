@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="1.0.1"></a>
+
+## 1.0.1 (2022-11-01)
+
+### Miscellaneous
+
+-   🌐 Update translations [[e50d9c1](https://github.com/harastaivan/personal-page/commit/e50d9c1716bae940a89f570d8b0424cbe389b33a)]
+
 <a name="1.0.0"></a>
 
 ## 1.0.0 (2022-11-01)
