@@ -42,6 +42,7 @@
         "redux": "4.x",
         "redux-saga": "1.x",
         "reselect": "4.x",
+        "scrollreveal": "^4.0.9",
         "typescript": "^4.4.2",
         "web-vitals": "^2.1.0"
     },
@@ -52,6 +53,7 @@
         "@testing-library/react": "^12.0.0",
         "@testing-library/user-event": "^13.2.1",
         "@types/jest": "^27.0.1",
+        "@types/scrollreveal": "^0.0.8",
         "gitmoji-changelog": "^2.3.0",
         "husky": "7.0.0",
         "imagemin-lint-staged": "0.4.0",
