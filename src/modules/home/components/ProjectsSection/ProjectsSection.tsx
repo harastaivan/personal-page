@@ -17,7 +17,7 @@ export const ProjectsSection = ({ extend }: ProjectsSectionProps) => {
     const { rules } = useFelaEnhanced(felaRules, { extend });
 
     return (
-        <Section extend={{ section: rules.container }}>
+        <Section extend={{ section: rules.container }} reveal>
             <SectionHeadline level={2}>
                 <FormattedMessage id="projects.title" />
             </SectionHeadline>

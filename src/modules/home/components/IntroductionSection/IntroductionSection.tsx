@@ -17,7 +17,7 @@ export const IntroductionSection = ({ extend }: IntroductionSectionProps) => {
     const tags = formatMessage({ id: 'introduction.tags' }).split(', ');
 
     return (
-        <Section extend={{ section: rules.centeredSection }}>
+        <Section extend={{ section: rules.centeredSection }} reveal={{ origin: 'top', delay: 0 }}>
             <Avatar src="/me.jpeg" fallback={formatMessage({ id: 'introduction.avatarFallback' })} />
             <Headline level={1} extend={{ headline: rules.headline }}>
                 <FormattedMessage id="introduction.name" /> <FormattedMessage id="introduction.surname" />

@@ -16,7 +16,7 @@ export const EducationSection = ({ extend }: EducationSectionProps) => {
     const { formatMessage } = useIntl();
 
     return (
-        <Section extend={{ section: rules.container }}>
+        <Section extend={{ section: rules.container }} reveal>
             <SectionHeadline level={2}>
                 <FormattedMessage id="education.title" />
             </SectionHeadline>

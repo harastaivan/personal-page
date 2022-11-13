@@ -15,7 +15,7 @@ export const ContactSection = ({ extend }: ContactSectionProps) => {
     const { formatMessage } = useIntl();
 
     return (
-        <Section>
+        <Section reveal>
             <SectionHeadline level={2}>
                 <FormattedMessage id="contact.title" />
             </SectionHeadline>

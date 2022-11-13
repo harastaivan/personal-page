@@ -7,7 +7,7 @@ import { TechnologyGroup } from './TechnologyGroup';
 export interface TechnologiesSectionProps {}
 
 export const TechnologiesSection = (props: TechnologiesSectionProps) => (
-    <Section>
+    <Section reveal>
         <SectionHeadline level={2}>
             <FormattedMessage id="technologies.title" />
         </SectionHeadline>

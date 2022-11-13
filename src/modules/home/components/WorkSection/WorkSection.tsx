@@ -18,7 +18,7 @@ export const WorkSection = ({ extend }: WorkSectionProps) => {
     const { formatMessage } = useIntl();
 
     return (
-        <Section extend={{ section: rules.container }}>
+        <Section extend={{ section: rules.container }} reveal>
             <SectionHeadline level={2}>
                 <FormattedMessage id="work.title" />
             </SectionHeadline>
