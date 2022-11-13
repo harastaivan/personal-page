@@ -29,7 +29,7 @@ export const fallback: TRuleWithTheme = ({ theme: { colors } }) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: colors.primary,
+    backgroundColor: colors.bgPrimary,
     color: colors.bgPrimary,
     fontSize: 30,
     lineHeight: 1,
