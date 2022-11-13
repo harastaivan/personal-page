@@ -26,7 +26,11 @@ export const IntroductionSection = ({ extend }: IntroductionSectionProps) => {
                 <FormattedMessage id="introduction.job" />
             </Headline>
             <Headline level={3} extend={{ headline: rules.subHeadline }}>
-                <DottedItems items={tags} extend={{ items: rules.items }} />
+                <DottedItems
+                    items={tags}
+                    reveal={{ delay: 300, distance: '10px', interval: 300, origin: 'right' }}
+                    extend={{ items: rules.items }}
+                />
             </Headline>
         </Section>
     );

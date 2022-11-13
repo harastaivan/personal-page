@@ -5,7 +5,7 @@ import type { RulesExtend } from 'styles/theme';
 
 import * as felaRules from './Section.rules';
 
-import { useScrollReveal, ScrollRevealOptions } from '../../hooks';
+import { useScrollReveal, ScrollRevealOptions, getSelector } from '../../hooks';
 
 export interface SectionProps {
     reveal?: ScrollRevealOptions;
@@ -16,7 +16,7 @@ export interface SectionProps {
 export const Section = ({ reveal, children, extend }: SectionProps) => {
     const { styles } = useFelaEnhanced(felaRules, { extend });
 
-    useScrollReveal(`.${styles.section}`, reveal);
+    useScrollReveal(getSelector(styles.section), reveal);
 
     return <section className={styles.section}>{children}</section>;
 };

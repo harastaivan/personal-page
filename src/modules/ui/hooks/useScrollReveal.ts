@@ -12,10 +12,13 @@ const defaultOptions: scrollReveal.ScrollRevealObjectOptions = {
     origin: 'left',
 };
 
-export const useScrollReveal = (
-    selector: string | HTMLElement | NodeListOf<Element>,
-    options?: ScrollRevealOptions,
-) => {
+export const getSelector = (felaClassNames?: string) =>
+    felaClassNames!
+        .split(' ')
+        .map(className => `.${className}`)
+        .join('');
+
+export const useScrollReveal = (selector: string, options?: ScrollRevealOptions) => {
     useEffect(() => {
         if (options === undefined) {
             return;
@@ -23,6 +26,8 @@ export const useScrollReveal = (
 
         const revealOptions = options === true ? defaultOptions : { ...defaultOptions, ...options };
 
+        // eslint-disable-next-line no-console
+        console.log(selector);
         scrollReveal().reveal(selector, revealOptions);
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
