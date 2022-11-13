@@ -1,5 +1,21 @@
 # Changelog
 
+<a name="1.1.0"></a>
+
+## 1.1.0 (2022-11-13)
+
+### Added
+
+-   ✨ Add useScrollReveal to DottedItems [[f1c0444](https://github.com/harastaivan/personal-page/commit/f1c0444bef98d48f2debb310e1d8ceede5dcda36)]
+-   ✨ Add scrollreveal to Section [[4e661b0](https://github.com/harastaivan/personal-page/commit/4e661b09a6f03a3ff30f6db15f6bb0905d75be8f)]
+-   ➕ Add scrollreveal [[d7e61d7](https://github.com/harastaivan/personal-page/commit/d7e61d7339cddc5f8f9248dde00a0709325bf1e8)]
+-   ✨ Add polka background pattern to layout [[acaf47b](https://github.com/harastaivan/personal-page/commit/acaf47bdf21540b1eb380d5e6f46f8cd97100400)]
+
+### Changed
+
+-   💄 Change fallback background color [[eaca07a](https://github.com/harastaivan/personal-page/commit/eaca07a5ac2aaff3f64eb65ea939e7e5adac7f90)]
+-   💄 Increase section padding [[db6202f](https://github.com/harastaivan/personal-page/commit/db6202ffa2a3b302e03c4bf670a6aaf13a04a315)]
+
 <a name="1.0.1"></a>
 
 ## 1.0.1 (2022-11-01)
