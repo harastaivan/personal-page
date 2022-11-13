@@ -1,5 +1,13 @@
 # Changelog
 
+<a name="1.1.1"></a>
+
+## 1.1.1 (2022-11-13)
+
+### Changed
+
+-   ⬆️ Upgrade @ackee/react-scripts [[d56ae4c](https://github.com/harastaivan/personal-page/commit/d56ae4c32e110977de798a5594472c936037ab43)]
+
 <a name="1.1.0"></a>
 
 ## 1.1.0 (2022-11-13)
