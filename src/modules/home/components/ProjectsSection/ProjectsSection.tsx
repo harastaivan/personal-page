@@ -7,7 +7,7 @@ import { Section, SectionHeadline } from 'modules/ui';
 import * as felaRules from './ProjectsSection.rules';
 import { Project } from './Project';
 
-const projects = ['tcup', 'personalPage', 'terapio', 'refrec'];
+const projects = ['minuto', 'supply-do', 'nxtc', 'tcup', 'personalPage', 'terapio', 'refrec'];
 
 export interface ProjectsSectionProps {
     extend?: RulesExtend<typeof felaRules>;

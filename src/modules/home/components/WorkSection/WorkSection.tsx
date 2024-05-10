@@ -7,7 +7,7 @@ import type { RulesExtend } from 'styles/theme';
 import * as felaRules from './WorkSection.rules';
 import { Work } from './Work';
 
-const companies = ['ackee', 'koala', 'bayer', 'footshop2', 'footshop1'];
+const companies = ['koala2', 'ackee', 'koala', 'bayer', 'footshop2', 'footshop1'];
 
 export interface WorkSectionProps {
     extend?: RulesExtend<typeof felaRules>;

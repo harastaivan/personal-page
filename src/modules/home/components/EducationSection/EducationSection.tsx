@@ -21,7 +21,7 @@ export const EducationSection = ({ extend }: EducationSectionProps) => {
                 <FormattedMessage id="education.title" />
             </SectionHeadline>
 
-            <Education
+            {/* <Education
                 from={<FormattedMessage id="education.engineer.from" />}
                 to={<FormattedMessage id="education.engineer.to" />}
                 school={<FormattedMessage id="education.engineer.school" />}
@@ -29,7 +29,7 @@ export const EducationSection = ({ extend }: EducationSectionProps) => {
                 degree={<FormattedMessage id="education.engineer.degree" />}
                 field={<FormattedMessage id="education.engineer.field" />}
                 specialization={<FormattedMessage id="education.engineer.specialization" />}
-            />
+            /> */}
 
             <Education
                 from={<FormattedMessage id="education.bachelor.from" />}
